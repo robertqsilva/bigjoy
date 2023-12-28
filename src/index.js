@@ -37,7 +37,7 @@ cron.schedule("*/5 * * * *", () => {
     });
 });
 
-app.listen(443, () => {
+app.listen(process.env.PORT, () => {
   console.log("Servidor rodando");
 });
 
