@@ -25,7 +25,7 @@ app.get("/bot", async (req, res) => {
 
 cron.schedule("*/5 * * * *", () => {
   axios
-    .get("https://api-fortune-tig.onrender.com/bot")
+    .get("https://jade-jolly-pelican.cyclic.app/bot")
     .then((response) => {
       console.log("Solicitação de manutenção enviada com sucesso");
     })
